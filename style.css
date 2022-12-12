@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 1em;
+    max-width: 72.375em;
+    }
+
+    body {
+        background-color: #080809;
+    }
+
+    .top-nav {
+        background-image: linear-gradient(1deg, #080809 1%, #f60202);
+        color: white;
+        display: flex;
+        font-size : 1em;
+        justify-content: space-between;
+        margin: 0;
+        }
+
+    .logo {
+        height: 9em;
+        float: left;
+        box-shadow: 1px 4px 10px whitesmoke;
+        width: 12em;
+        }
+
+    
+    .nav-tabs li {
+        display: inline-block; 
+        padding: 20px 10px; 
+        list-style: none;
+        padding-top: 60px;
+     }
+
+    a {
+        padding: 9px;
+    }
+
+    .top-nav a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+        
+    li {
+        font-size: 1.5em;
+    }
+
+    .top-nav a:hover {
+        color: rgb(27, 5, 229);
+        background-color: #f0ecec;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgb(7, 7, 7);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-line {
+        width: 1.25em;
+        height: .09em;
+        background-color: #f0ecec;
+        margin-bottom: .3em;
+    }
+
+    @media all and (max-width: 538px)  {
+        .top-nav {
+            flex-direction: column;
+        }
+
+        .menu {
+            display: block;
+            position: absolute;
+            right: 0.625em;
+            top: 0.5em;
+            justify-content: center;
+        }
+        
+        a {
+            font-size: 20px;
+            padding: 0;
+        }
+        
+        
+    }
+        
+   
+
+/*============ header =================================*/
+
+.top-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(5, 6, 6);
+    margin: 0;
+    padding-top: 1em;
+    
+}
+
+.top-info {
+    font-size: 5em;
+    color: #f0ecec;
+    text-shadow: 2px 2px 5px #fc894d;
+}
+
+@media  screen and (max-width: 538px) {
+    .top-info {  
+        font-size: 2em;
+        padding-top: 0;  
+    }
+    
+}
+
+
+/*============ main =================================*/
+
+.main {
+    padding-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #080809;
+}
+
+.images {
+    padding: 0;
+    height: 14em;
+    margin: auto;
+    
+}
+
+img {
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    border-radius: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1033px) and (min-width: 537px){
+    .images {
+        height: 8em;
+        width: 17em;
+        flex-wrap: wrap;
+    };
+}   
+
+@media screen and (max-width: 538px){
+    .main {
+        flex-wrap: wrap;
+        width: auto;
+        padding-top: 0;
+        display: none;
+    }
+}
+
+
+
+/*============ MEET div =============================*/
+
+.meet-up {
+    padding-top: 2em;
+    text-align: center;
+    color: #f0ecec;
+    font-size: 2em;
+    border-bottom: 2px solid red;
+    padding-bottom: 1em;
+}
+
+.meet-up a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.meet-up a:hover {
+    text-decoration: underline;
+    background-color: #f60202;
+    border-radius: 5px;
+    padding: 0;
+
+}
+
+@media screen and (max-width: 538px){
+    .meet-up {
+        font-size: 1.8em;
+        justify-content: center;
+        
+    }
+    
+}
+/*========= footer ==============*/
+
+.footer {
+    padding-top: 0em;
+    color: #f0ecec;
+    height: 26em;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.footer-text {
+    font-size: 5vw;
+    position: absolute;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-left:100px;
+    width: 10em;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #fc894d
+}
+
+@media screen and (max-width: 538px){
+    .footer {
+        height: 15em; 
+    }
+
+    .footer-text {
+        font-size: .0.5em;
+        padding-left: 1em;
+        padding-right: 2em;
+    }
+}
+
+/*========== last footer text =================*/
+
+.last-footer {
+    float: left;
+    color: aliceblue;
+    font-size: 2.5vw;
+    text-shadow: 2px 2px 5px #fc894d;
+    padding-left: 7em;
+    padding-top: 4em;
+    margin: auto;
+}  
+
+@media screen and (max-width: 843px){
+    .last-footer {
+        display: none;
+    }
+}
+
+/*--------- map ---------*/
+
+.map {
+    float: right;
+    padding-right: 6em;
+    padding-top: 3em;
+    
+}
+
+.maps {
+    border-radius: 10px;
+    box-shadow: 7px 4px 5px #e41212;
+    
+}
+
+@media screen and (max-width: 843px) and (min-width: 537px){
+    .map {
+        float: none;
+        justify-content: center;
+        margin: auto;
+        padding-left: 12em;
+    }
+    
+}
+
+@media screen and (max-width: 538px){
+    .map {
+        float: none;
+        box-shadow: none;
+        padding-left: .5em;
+    }
+
+    .maps {
+        height: 13em;
+        width: 27em;
+
+    }
+}
